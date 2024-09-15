@@ -32,8 +32,8 @@ const n = 1;
     } 
     // Вывести сумму n + nn + nnn, где значения nn и nnn - результат конкатенации n 
     else {
-            const nn = (Number(String(n) + String(n)));
-            const nnn = (Number(String(n) + String(n) + String(n)));
+            const nn = Number(String(n) + n);
+            const nnn = Number(String(n) + n + n);
             const cont_summ = n + nn + nnn;
             console.log(cont_summ);
     } 
