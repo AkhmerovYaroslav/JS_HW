@@ -27,12 +27,9 @@ console.log("item_7 == ",item_7, "item_7_type == ",item_7_type);
 
 const n = 1;
     //Число от 1 до 9 
-    if (n > 9) {
+    if (n > 9 || n < 1) {
     console.log('Значение должно быть в пределах от 1 до 9');    
     } 
-    else if (n < 1) {
-        console.log('Значение должно быть в пределах от 1 до 9');
-    }
     // Вывести сумму n + nn + nnn, где значения nn и nnn - результат конкатенации n 
     else {
             const nn = (Number(String(n) + String(n)));
