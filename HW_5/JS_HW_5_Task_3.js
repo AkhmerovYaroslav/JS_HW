@@ -6,15 +6,16 @@
 
 const text = "";
 const vowels = 'aeiou';
+const consonants = 'bcdfghjklmnpqrstvwxyz'
 
 let vowelsCount = 0;
 let consonantsCount = 0;
 
 for (let i = 0; i < text.length; i++) {
-    const lowerCaseText = text.toLowerCase();
-    if (vowels.indexOf(lowerCaseText[i]) !== -1) {
-            vowelsCount++;
-    } else {
+        const lowerCaseText = text[i].toLowerCase();
+        if (vowels.indexOf(lowerCaseText) !== -1) {
+                vowelsCount++;
+        } else if (consonants.indexOf(lowerCaseText) !== -1) {
             consonantsCount++;
     }
 }
