@@ -24,13 +24,12 @@ nextTask()
 */
 
 function getDevidedBy_(sentence) {
-    const words = sentence.split(' ');
-    const devideBy_sentence = words.map((word, i) => {
-      if (i === 0) {
-        return word.charAt(0).toLowerCase() + word.slice(1);
-    } else {
+    const words = sentence.toLowerCase().split(' ');
+    return words.map((word, i) => {
+      if (i !== 0) {
         return word.charAt(0).toUpperCase() + word.slice(1);
     }
+        return word;
   }).join('_');
   return devideBy_sentence;
 }
