@@ -10,7 +10,7 @@ const competitorPizzas = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawa
 const myPizzas = ['Пепперони', 'Капричоза', 'Diablo', '4 Сыра', 'Гавайская'];
 // const myPizzas = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
 
-const PizzasOnlyIHave = [];
+const pizzasOnlyIHave = [];
 
 
 
