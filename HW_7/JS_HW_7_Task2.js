@@ -4,9 +4,7 @@
 
 function checkForPalindrome(word) {
   const wordToLowerCase = word.toLowerCase();
-  const wordSplitted = wordToLowerCase.split('');
-  const wordBackwards = wordSplitted.reverse().join('');
-  return wordToLowerCase === wordBackwards;
+  return wordToLowerCase === wordToLowerCase.split('').reverse().join('');
 }
 
 console.log(checkForPalindrome('TeneT'));
