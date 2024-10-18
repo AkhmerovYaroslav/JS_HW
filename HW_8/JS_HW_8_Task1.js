@@ -28,11 +28,7 @@ console.log(arrOfNum.map((num, index, originalArr) => num - originalArr.length))
 
 nextStep()
 
-console.log(arrOfNum.filter((num, i) => {
-   if (i > 0 && num > arrOfNum[i - 1]) {
-      return num;
-   }
-}));
+console.log(arrOfNum.filter((num, i) => num > arrOfNum[i - 1]));
 
 nextStep()
 
