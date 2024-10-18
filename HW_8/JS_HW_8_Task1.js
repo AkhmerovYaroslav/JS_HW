@@ -24,7 +24,7 @@ arrOfNum.forEach(num => {
 
 nextStep()
 
-console.log(arrOfNum.map(num => num - arrOfNum.length));
+console.log(arrOfNum.map((num, index, originalArr) => num - originalArr.length));
 
 nextStep()
 
