@@ -40,7 +40,7 @@ console.log(arrOfNum.toSorted((a, b) => a - b));
 
 nextStep()
 
-console.log(arrOfNum.reduce((acc, num) => { return acc + num}, 0));
+console.log(arrOfNum.reduce((acc, num) => acc + num, 0));
 
 
 nextStep()
