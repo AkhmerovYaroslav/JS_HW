@@ -32,12 +32,7 @@ console.log(arrOfNum.filter((num, i) => num > arrOfNum[i - 1]));
 
 nextStep()
 
-console.log(arrOfNum.find((num, i) => {
-   if (num === i) {
-      return num;
-   }
-}));
-
+console.log(arrOfNum.find((num, i) => num === i));
 
 nextStep()
 
